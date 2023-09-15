@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 2.1rem;
+    letter-spacing: 1px;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url("images/bg-mobile.svg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.header {
+    
+    margin: 1.5rem;
+    width: 25rem;
+}
+
+.logo-svg {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.inhalt {
+    max-width: 25rem;
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: white;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    height: 4rem;
+    width: 13rem;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social {
+    margin: 0px 0.5rem;
+}
+
+.social:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        flex-direction: row;
+        background-image: url("images/bg-desktop.svg");
+        background-size: 100% 100%;
+        column-gap: 3.9rem;
+        margin: 0rem 9rem;
+    }
+
+    .header {
+        width: 75%;
+    }
+
+    .inhalt {
+        text-align: left;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 60rem;
+    }
+
+    footer {
+        align-self: flex-end;
+        transform: translateY(13rem);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;                                           
+    }
+
+    .btn {
+        width: 13rem;
+        text-align: center;
+    }
+
+}
